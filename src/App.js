@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Quote from "./components/Quote";
-import { Content, NewQuoteButton, Title, TitleBar } from "./App.styled.js";
+import { Content, NewQuoteButton, FooterBar, ErrorText } from "./App.styled.js";
 import { Halo } from "./components/Halo/index.js";
 
 function App() {
@@ -33,7 +33,12 @@ function App() {
     <Content>
       <Halo />
       <Quote text={quote.text} author={quote.author} />
-      <TitleBar><Title>Feeling</Title></TitleBar>
+      <FooterBar>
+        {!error && <NewQuoteButton onClick={updateQuote}>
+          Need something better? Get inspired here!
+        </NewQuoteButton>}
+        {error && <ErrorText>{error}</ErrorText>}
+      </FooterBar>
     </Content>
   );
 }

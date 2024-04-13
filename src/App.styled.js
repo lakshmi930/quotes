@@ -22,11 +22,7 @@ export const Content = styled.div`
   }
 `;
 
-export const NewQuoteButton = styled.button`
-  background-color: chocolate;
-`;
-
-export const TitleBar = styled.div`
+export const FooterBar = styled.div`
   color: white;
   font-family: monospace;
   font-size: 12px;
@@ -40,10 +36,24 @@ export const TitleBar = styled.div`
   padding: 8px;
 `;
 
-export const Title = styled.h1`
+export const NewQuoteButton = styled.button`
   color: white;
   font-family: monospace;
   font-size: 12px;
   font-weight: 400;
   text-align: center;
+  border: 0;
+  cursor: pointer;
+  background-color: transparent;
+`;
+
+export const ErrorText = styled.div`
+  color: #f00560;
+  font-family: monospace;
+  font-size: 12px;
+  font-weight: 400;
+  text-align: center;
+  border: 0;
+  cursor: pointer;
+  background-color: transparent;
 `;
