@@ -13,7 +13,7 @@ function App() {
   const updateQuote = async () => {
     try {
       // Make the API request
-      const response = await fetch('https://dummyjson.com/quotes/1');
+      const response = await fetch('https://dummyjson.com/quotes/random');
       if (!response.ok) {
         throw new Error('Failed to fetch quote');
       }

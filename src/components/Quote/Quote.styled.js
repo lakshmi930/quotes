@@ -6,16 +6,15 @@ export const Wrapper = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 30%;
+    width: 50vh;
     border-radius: 8px;
     margin: 0 auto;
     position: absolute;
     top: 45%;
-    left: 35%;
+    left: calc(50% - 25vh);
 `;
 
 export const BlockQuote = styled.blockquote`
-    color: violetred;
     font-family: monospace;
     font-size: 20px;
     font-weight: 500;
